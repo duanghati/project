@@ -34,6 +34,13 @@ cond1(no)->op3
 cond1(yes)->op5->op6->e
 
 ```
+
+## ⚒ Structure
+```mermaid
+  graph LR;
+   Bank-Statement-GUI --> Bank-Statement-API;
+  
+```
 ****
 
 
