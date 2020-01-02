@@ -15,65 +15,13 @@
 
 
 ****
-## ⚒ Structure
+## ⚒ Flowchart
 
 ```flow
-
-a=>start: เริ่มต้น
-op1=>operation: เจ้าของเรื่องยื่นเอกสารให้กับธุรการ
-op2=>operation: ธุรการรับเอกสารและสร้างเลขติดตามเอกสาร
-op3=>operation: เอกสารรอดำเนินการ
-op4=>operation: ผู้อนุมัติตรวจสอบเรื่องที่ร้องขอ
-op5=>operation: ธุรการส่งเอกสารให้กับส่วนงานที่รับเรื่อง
-op6=>operation: บันทึกสถานะการดำเนินการแล้วเสร็จ
-cond1=>condition: อนุมัติเอกสารหรือไม่ | rejected
-e=>end: สิ้นสุด
-
-a->op1->op2->op3->op4->cond1
-cond1(no)->op3
-cond1(yes)->op5->op6->e
-
-```
-
-## ⚒ Structure
-```mermaid
-  graph LR;
-   Bank-Statement-GUI --> Bank-Statement-API;
+[![Untitled-Diagram.png](https://i.postimg.cc/x1jjXRzX/Untitled-Diagram.png)](https://postimg.cc/pp7M7Kkv)
   
 ```
-****
 
 
 
-## ⚙ How to use
 
-1. Clone project
-
-    ```bash
-    git clone https://ipanda/BankStatement/BankStatement-Front.git
-    ```
-
-2. Go to project folder
-
-    ```bash
-    cd BankStatement-Front
-    ```
-
-3. Install Dependency Package
-
-    ```bash
-    npm install
-    ```
-
-4. Run project by command
-
-    ```bash
-    npm start
-    node server/server.js
-    ```
-
-5. Runs the app in the development mode. 
-
-    ```
-    Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-    ```
